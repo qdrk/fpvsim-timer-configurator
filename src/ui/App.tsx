@@ -7,7 +7,6 @@ import { ApolloProvider } from '@apollo/client';
 import theme from './theme';
 import client from './gql';
 import ConfiguratorView from './views/ConfiguratorView';
-import SettingsView from './views/SettingsView';
 import LogsView from './views/LogsView';
 import SerialMonitorView from './views/SerialMonitorView';
 import SupportView from './views/SupportView';
@@ -66,7 +65,7 @@ const App = () => {
                   element={
                     <ConfiguratorView
                       key="configurator"
-                      gitRepository={Config.expressLRSGit}
+                      gitRepository={Config.fpvsimTimerGit}
                       selectedDevice={device}
                       networkDevices={networkDevices}
                       onDeviceChange={onDeviceChange}
@@ -83,29 +82,6 @@ const App = () => {
                     />
                   }
                 />
-                <Route
-                  path="/backpack"
-                  element={
-                    <ConfiguratorView
-                      key="backpack"
-                      gitRepository={Config.backpackGit}
-                      selectedDevice={device}
-                      networkDevices={networkDevices}
-                      onDeviceChange={onDeviceChange}
-                      deviceType={DeviceType.Backpack}
-                      buildProgressNotifications={buildProgressNotifications}
-                      lastBuildProgressNotification={
-                        lastBuildProgressNotification
-                      }
-                      resetBuildProgressNotifications={
-                        resetBuildProgressNotifications
-                      }
-                      buildLogs={buildLogs}
-                      resetBuildLogs={resetLogs}
-                    />
-                  }
-                />
-                <Route path="/settings" element={<SettingsView />} />
                 <Route path="/logs" element={<LogsView />} />
                 <Route path="/serial-monitor" element={<SerialMonitorView />} />
                 <Route path="/support" element={<SupportView />} />

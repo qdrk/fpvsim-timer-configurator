@@ -1,6 +1,6 @@
 {
   "name": "expresslrs-configurator",
-  "productName": "ExpressLRS Configurator",
+  "productName": "FPVSIM Timer Configurator",
   "description": "Cross platform build & configuration tool for the ExpressLRS firmware",
   "scripts": {
     "build": "concurrently \"yarn build:main\" \"yarn build:renderer\"",
@@ -20,7 +20,7 @@
     "prepare": "husky install"
   },
   "author": {
-    "name": "ExpressLRS Configurator Contributors",
+    "name": "FPVSIM Timer Configurator Contributors",
     "email": "info@expresslrs.org",
     "url": "https://github.com/ExpressLRS/ExpressLRS-Configurator/graphs/contributors"
   },
@@ -39,7 +39,7 @@
     ]
   },
   "build": {
-    "productName": "ExpressLRS Configurator",
+    "productName": "FPVSIM Timer Configurator",
     "appId": "org.expresslrs.configurator",
     "buildDependenciesFromSource": true,
     "files": [

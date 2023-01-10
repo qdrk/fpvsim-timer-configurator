@@ -72,19 +72,6 @@ const Sidebar: FunctionComponent = () => {
             </ListItemIcon>
             <ListItemText primary="Configurator" />
           </ListItem>
-          <ListItem
-            component={Link}
-            to="/backpack"
-            selected={backpackActive}
-            sx={styles.menuItem}
-            button
-            disabled={!navigationEnabled}
-          >
-            <ListItemIcon>
-              <BackpackIcon />
-            </ListItemIcon>
-            <ListItemText primary="Backpack" />
-          </ListItem>
 
           {/* <ListItem */}
           {/*  component={Link} */}

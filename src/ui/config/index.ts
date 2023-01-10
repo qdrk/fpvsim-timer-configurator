@@ -6,32 +6,22 @@ interface IConfig {
   facebookGroupUrl: string;
   discordUrl: string;
   openCollectiveUrl: string;
-  expressLRSGit: GitRepository;
-  backpackGit: GitRepository;
+  fpvsimTimerGit: GitRepository;
 }
 
 export const Config: IConfig = {
-  documentationUrl: 'https://www.expresslrs.org/',
-  githubRepositoryUrl: 'https://github.com/ExpressLRS/ExpressLRS',
+  documentationUrl: 'https://fpvsim.com/',
+  githubRepositoryUrl: 'https://github.com/qdrk/fpvsim-timer',
   facebookGroupUrl: 'https://www.facebook.com/groups/636441730280366',
   discordUrl: 'https://discord.gg/dS6ReFY',
   openCollectiveUrl: 'https://opencollective.com/expresslrs',
-  expressLRSGit: {
-    cloneUrl: 'https://github.com/ExpressLRS/ExpressLRS',
-    url: 'https://github.com/ExpressLRS/ExpressLRS',
-    owner: 'ExpressLRS',
-    repositoryName: 'ExpressLRS',
-    rawRepoUrl: 'https://raw.githubusercontent.com/ExpressLRS/ExpressLRS',
+  fpvsimTimerGit: {
+    cloneUrl: 'https://github.com/qdrk/fpvsim-timer',
+    url: 'https://github.com/qdrk/fpvsim-timer',
+    owner: 'fpvsim.com',
+    repositoryName: 'fpvsim-timer',
+    rawRepoUrl: 'https://raw.githubusercontent.com/qdrk/fpvsim-timer',
     srcFolder: 'src',
-    tagExcludes: ['<2.5.0'],
-  },
-  backpackGit: {
-    cloneUrl: 'https://github.com/ExpressLRS/Backpack',
-    url: 'https://github.com/ExpressLRS/Backpack',
-    owner: 'ExpressLRS',
-    repositoryName: 'Backpack',
-    rawRepoUrl: 'https://raw.githubusercontent.com/ExpressLRS/Backpack',
-    srcFolder: '/',
     tagExcludes: [],
   },
 };

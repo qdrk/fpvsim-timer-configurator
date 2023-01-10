@@ -61,11 +61,11 @@ const Header: FunctionComponent = memo(() => {
     <AppBar position="static" color="default">
       <Toolbar sx={styles.toolbar}>
         <Box sx={styles.logotype}>
-          <img src={LogotypeIcon} alt="ExpressLrs Configurator" />
+          <img src={LogotypeIcon} alt="FPVSIM Timer Configurator" />
           <Typography variant="h4" sx={styles.title}>
             {process.env.EXPRESSLRS_CONFIGURATOR_TITLE}{' '}
             <Box component="span" sx={styles.version}>
-              v{process.env.EXPRESSLRS_CONFIGURATOR_VERSION}
+              v0.0.1
             </Box>
             {updateResponse?.checkForUpdates?.updateAvailable && (
               <Box

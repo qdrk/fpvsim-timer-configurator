@@ -1,11 +1,11 @@
 {
   "name": "expresslrs-configurator",
-  "productName": "ExpressLRS Configurator",
+  "productName": "FPVSIM Timer Configurator",
   "version": "1.5.5",
   "description": "Cross platform configuration tool for the ExpressLRS firmware",
   "main": "./main.prod.js",
   "author": {
-    "name": "ExpressLRS Configurator Contributors",
+    "name": "FPVSIM Timer Configurator Contributors",
     "email": "info@expresslrs.org",
     "url": "https://github.com/ExpressLRS/ExpressLRS-Configurator/graphs/contributors"
   },

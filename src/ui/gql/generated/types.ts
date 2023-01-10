@@ -118,7 +118,6 @@ export type Device = {
 };
 
 export enum DeviceType {
-  Backpack = 'Backpack',
   ExpressLRS = 'ExpressLRS',
 }
 
