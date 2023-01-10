@@ -420,7 +420,7 @@ const FirmwareVersionForm: FunctionComponent<FirmwareVersionCardProps> = (
         <Box sx={styles.tabContents}>
           {!loading && (
             <>
-              <FormControlLabel
+              {/* <FormControlLabel
                 sx={styles.preReleaseCheckbox}
                 control={
                   <Checkbox
@@ -429,7 +429,7 @@ const FirmwareVersionForm: FunctionComponent<FirmwareVersionCardProps> = (
                   />
                 }
                 label="Show pre-releases"
-              />
+              /> */}
               <Omnibox
                 title="Releases"
                 options={gitTagOptions}
@@ -439,7 +439,7 @@ const FirmwareVersionForm: FunctionComponent<FirmwareVersionCardProps> = (
                 }
                 onChange={onGitTag}
               />
-              <Button
+              {/* <Button
                 size="small"
                 sx={styles.releaseNotes}
                 target="_blank"
@@ -447,7 +447,7 @@ const FirmwareVersionForm: FunctionComponent<FirmwareVersionCardProps> = (
                 href={`${gitRepository.url}/releases/tag/${currentGitTag}`}
               >
                 Release notes
-              </Button>
+              </Button> */}
               {currentGitTag &&
                 gitTagOptions.length > 0 &&
                 gitTagOptions[0]?.value !== currentGitTag && (

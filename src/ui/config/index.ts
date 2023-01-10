@@ -21,7 +21,7 @@ export const Config: IConfig = {
     owner: 'qdrk',
     repositoryName: 'fpvsim-timer',
     rawRepoUrl: 'https://raw.githubusercontent.com/qdrk/fpvsim-timer',
-    srcFolder: 'src',
+    srcFolder: '',
     tagExcludes: [],
   },
 };

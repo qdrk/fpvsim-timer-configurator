@@ -47,6 +47,9 @@ export default class HttpTargetsService implements TargetsLoader {
     }
     try {
       const platformioFile = `https://raw.githubusercontent.com/${gitRepositoryOwner}/${gitRepositoryName}/${ref}${gitRepositorySrcFolder}/platformio.ini`;
+      console.log('>>>>');
+      console.log(platformioFile);
+
       const platformioFileContents = await this.downloadFile(platformioFile);
 
       const targetFiles = extractTargetFiles(platformioFileContents);

@@ -76,13 +76,14 @@ export default class GitTargetsService extends TargetsLoader {
           );
           availableTargets = await loadTargetsFromDirectory(commitResult.path);
           break;
-        case FirmwareSource.GitTag:
+        case FirmwareSource.GitTag: // Release
           const tagResult = await firmwareDownload.checkoutTag(
             gitRepository.url,
             `${srcFolder}targets`,
             args.gitTag
           );
           availableTargets = await loadTargetsFromDirectory(tagResult.path);
+          console.log(`[${availableTargets}`);
           break;
         case FirmwareSource.GitPullRequest:
           if (args.gitPullRequest === null) {

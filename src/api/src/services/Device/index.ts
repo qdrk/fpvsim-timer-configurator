@@ -59,11 +59,11 @@ export default class DeviceService implements IDevices {
         if (!value.targets || value.targets.length === 0) {
           throw new Error(`devices must have a list of targets defined!`);
         }
-        if (!value.userDefines || value.userDefines.length === 0) {
-          throw new Error(
-            `devices must have a list of supported user defines!`
-          );
-        }
+        // if (!value.userDefines || value.userDefines.length === 0) {
+        //   throw new Error(
+        //     `devices must have a list of supported user defines!`
+        //   );
+        // }
 
         const targets: Target[] = value.targets.map(
           (item: { name: string; flashingMethod: string }) => {
@@ -178,6 +178,8 @@ export default class DeviceService implements IDevices {
       }
     });
 
+    console.log('<<<<');
+    devices.forEach((device) => console.log(`<${device}`));
     return devices;
   }
 

@@ -1,0 +1,16 @@
+[
+  {
+    "category": "ESP32",
+    "name": "node32s",
+    "targets": [
+      {
+        "flashingMethod": "UART",
+        "name": "node32s"
+      }
+    ],
+    "userDefines": [],
+    "wikiUrl": "",
+    "deviceType": "ExpressLRS",
+    "aliases": []
+  }
+]
