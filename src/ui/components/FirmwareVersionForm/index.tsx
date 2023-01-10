@@ -412,9 +412,9 @@ const FirmwareVersionForm: FunctionComponent<FirmwareVersionCardProps> = (
       >
         <Tab label="Official releases" value={FirmwareSource.GitTag} />
         <Tab label="Git branch" value={FirmwareSource.GitBranch} />
-        <Tab label="Git commit" value={FirmwareSource.GitCommit} />
+        {/* <Tab label="Git commit" value={FirmwareSource.GitCommit} />
         <Tab label="Local" value={FirmwareSource.Local} />
-        <Tab label="Git Pull Request" value={FirmwareSource.GitPullRequest} />
+        <Tab label="Git Pull Request" value={FirmwareSource.GitPullRequest} /> */}
       </Tabs>
       {firmwareSource === FirmwareSource.GitTag && gitTags !== undefined && (
         <Box sx={styles.tabContents}>

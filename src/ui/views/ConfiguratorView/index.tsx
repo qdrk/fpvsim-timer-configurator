@@ -896,11 +896,11 @@ const ConfiguratorView: FunctionComponent<ConfiguratorViewProps> = (props) => {
                   sx={styles.button}
                   size="large"
                   variant="contained"
-                  onClick={onBuild}
+                  onClick={onBuildAndFlash}
                 >
-                  Build
+                  Build & Flash
                 </Button>
-                {deviceTarget?.flashingMethod !== FlashingMethod.Radio && (
+                {/* {deviceTarget?.flashingMethod !== FlashingMethod.Radio && (
                   <SplitButton
                     sx={styles.button}
                     size="large"
@@ -923,7 +923,7 @@ const ConfiguratorView: FunctionComponent<ConfiguratorViewProps> = (props) => {
                       }
                     }}
                   />
-                )}
+                )} */}
               </div>
             </CardContent>
           </Card>

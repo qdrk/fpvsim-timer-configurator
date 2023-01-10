@@ -18,7 +18,7 @@ export const Config: IConfig = {
   fpvsimTimerGit: {
     cloneUrl: 'https://github.com/qdrk/fpvsim-timer',
     url: 'https://github.com/qdrk/fpvsim-timer',
-    owner: 'fpvsim.com',
+    owner: 'qdrk',
     repositoryName: 'fpvsim-timer',
     rawRepoUrl: 'https://raw.githubusercontent.com/qdrk/fpvsim-timer',
     srcFolder: 'src',

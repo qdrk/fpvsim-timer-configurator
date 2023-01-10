@@ -1,5 +1,5 @@
 {
-  "name": "expresslrs-configurator",
+  "name": "fpvsim-timer-configurator",
   "productName": "FPVSIM Timer Configurator",
   "description": "Cross platform build & configuration tool for the ExpressLRS firmware",
   "scripts": {
@@ -21,8 +21,7 @@
   },
   "author": {
     "name": "FPVSIM Timer Configurator Contributors",
-    "email": "info@expresslrs.org",
-    "url": "https://github.com/ExpressLRS/ExpressLRS-Configurator/graphs/contributors"
+    "email": "info@expresslrs.org"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -148,13 +147,13 @@
     ],
     "publish": {
       "provider": "github",
-      "owner": "ExpressLRS",
-      "repo": "ExpressLRS-Configurator"
+      "owner": "qdrk",
+      "repo": "fpvsim-timer-configurator"
     }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ExpressLRS/ExpressLRS-Configurator"
+    "url": "git+https://github.com/ExpressLRS/fpvsim-timer-configurator"
   },
   "license": "GPL-3.0-or-later",
   "bugs": {
