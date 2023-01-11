@@ -1,5 +1,5 @@
 ---
 name: Feature request
-about: You want something added to the expresslrs-configurator. 🎉
+about: You want something added to the fpvsim-timer-configurator. 🎉
 labels: 'enhancement'
 ---

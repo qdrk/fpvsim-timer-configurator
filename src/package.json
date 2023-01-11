@@ -1,13 +1,13 @@
 {
-  "name": "expresslrs-configurator",
+  "name": "fpvsim-timer-configurator",
   "productName": "FPVSIM Timer Configurator",
-  "version": "1.5.5",
-  "description": "Cross platform configuration tool for the ExpressLRS firmware",
+  "version": "1.0.0",
+  "description": "Cross platform configuration tool for the FPVSIM TIMER firmware",
   "main": "./main.prod.js",
   "author": {
     "name": "FPVSIM Timer Configurator Contributors",
-    "email": "info@expresslrs.org",
-    "url": "https://github.com/ExpressLRS/ExpressLRS-Configurator/graphs/contributors"
+    "email": "info@fpvsim.com",
+    "url": "https://github.com/qdrk/fpvsim-timer-configurator/graphs/contributors"
   },
   "scripts": {
     "electron-rebuild": "node -r ../.erb/scripts/BabelRegister.js ../.erb/scripts/ElectronRebuild.js",

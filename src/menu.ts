@@ -164,7 +164,7 @@ export default class MenuBuilder {
     //       label: 'GitHub',
     //       click() {
     //         shell.openExternal(
-    //           'https://www.github.com/expresslrs/expresslrs-configurator'
+    //           'https://www.github.com/qdrk/fpvsim-timer-configurator'
     //         );
     //       },
     //     },
@@ -172,7 +172,7 @@ export default class MenuBuilder {
     //       label: 'Documentation',
     //       click() {
     //         shell.openExternal(
-    //           'https://github.com/expresslrs/expresslrs-configurator/tree/master/docs#readme'
+    //           'https://github.com/qdrk/fpvsim-timer-configurator/tree/master/docs#readme'
     //         );
     //       },
     //     },
@@ -185,7 +185,7 @@ export default class MenuBuilder {
     //     {
     //       label: 'Search Issues',
     //       click() {
-    //         shell.openExternal('https://github.com/expresslrs/expresslrs-configurator/issues');
+    //         shell.openExternal('https://github.com/qdrk/fpvsim-timer-configurator/issues');
     //       },
     //     },
     //   ],
@@ -268,7 +268,7 @@ export default class MenuBuilder {
             label: 'Learn More',
             click() {
               shell.openExternal(
-                'https://github.com/expresslrs/expresslrs-configurator'
+                'https://github.com/qdrk/fpvsim-timer-configurator'
               );
             },
           },
@@ -276,7 +276,7 @@ export default class MenuBuilder {
           //   label: 'Documentation',
           //   click() {
           //     shell.openExternal(
-          //       'https://github.com/expresslrs/expresslrs-configurator/tree/master/docs#readme'
+          //       'https://github.com/qdrk/fpvsim-timer-configurator/tree/master/docs#readme'
           //     );
           //   },
           // },
@@ -289,7 +289,7 @@ export default class MenuBuilder {
           // {
           //   label: 'Search Issues',
           //   click() {
-          //     shell.openExternal('https://github.com/expresslrs/expresslrs-configurator/issues');
+          //     shell.openExternal('https://github.com/qdrk/fpvsim-timer-configurator/issues');
           //   },
           // },
         ],
