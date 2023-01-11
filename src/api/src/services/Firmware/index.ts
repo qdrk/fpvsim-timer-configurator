@@ -180,6 +180,7 @@ export default class FirmwareService {
     return userDefinesBuilder.build(this.processUserDefines(userDefines));
   }
 
+  // Where the flash happens.
   async buildFlashFirmware(
     params: BuildFlashFirmwareParams,
     gitRepositoryUrl: string,
@@ -334,50 +335,50 @@ export default class FirmwareService {
         gitRepositoryUrl,
       });
 
-      await this.updateProgress(
-        BuildProgressNotificationType.Info,
-        BuildFirmwareStep.BUILDING_USER_DEFINES
-      );
-      if (
-        params.userDefinesMode === UserDefinesMode.UserInterface &&
-        params.firmware.source !== FirmwareSource.Local
-      ) {
-        const compatCheck =
-          await this.builder.checkDefaultUserDefinesCompatibilityAtPath(
-            firmwarePath,
-            params.userDefines
-              .filter(
-                (userDefine) =>
-                  userDefine.enabled &&
-                  userDefine.key !== UserDefineKey.DEVICE_NAME
-              )
-              .map(({ key }) => key)
-          );
-        if (!compatCheck.compatible) {
-          return new BuildFlashFirmwareResult(
-            false,
-            `Downloaded firmware is not compatible with the following user defines: ${compatCheck.incompatibleKeys}`,
-            BuildFirmwareErrorType.BuildError
-          );
-        }
-      }
+      // await this.updateProgress(
+      //   BuildProgressNotificationType.Info,
+      //   BuildFirmwareStep.BUILDING_USER_DEFINES
+      // );
+      // if (
+      //   params.userDefinesMode === UserDefinesMode.UserInterface &&
+      //   params.firmware.source !== FirmwareSource.Local
+      // ) {
+      //   const compatCheck =
+      //     await this.builder.checkDefaultUserDefinesCompatibilityAtPath(
+      //       firmwarePath,
+      //       params.userDefines
+      //         .filter(
+      //           (userDefine) =>
+      //             userDefine.enabled &&
+      //             userDefine.key !== UserDefineKey.DEVICE_NAME
+      //         )
+      //         .map(({ key }) => key)
+      //     );
+      //   if (!compatCheck.compatible) {
+      //     return new BuildFlashFirmwareResult(
+      //       false,
+      //       `Downloaded firmware is not compatible with the following user defines: ${compatCheck.incompatibleKeys}`,
+      //       BuildFirmwareErrorType.BuildError
+      //     );
+      //   }
+      // }
 
-      const userDefinesBuilder = new UserDefinesTxtFactory();
-      let userDefines = '';
-      switch (params.userDefinesMode) {
-        case UserDefinesMode.Manual:
-          userDefines = params.userDefinesTxt;
-          break;
-        case UserDefinesMode.UserInterface:
-          userDefines = userDefinesBuilder.build(
-            this.processUserDefines(params.userDefines)
-          );
-          break;
-        default:
-          throw new Error(
-            `unsupported user defines mode: ${params.userDefinesMode}`
-          );
-      }
+      // const userDefinesBuilder = new UserDefinesTxtFactory();
+      // let userDefines = '';
+      // switch (params.userDefinesMode) {
+      //   case UserDefinesMode.Manual:
+      //     userDefines = params.userDefinesTxt;
+      //     break;
+      //   case UserDefinesMode.UserInterface:
+      //     userDefines = userDefinesBuilder.build(
+      //       this.processUserDefines(params.userDefines)
+      //     );
+      //     break;
+      //   default:
+      //     throw new Error(
+      //       `unsupported user defines mode: ${params.userDefinesMode}`
+      //     );
+      // }
 
       const platformioStateJson = await this.platformio.getPlatformioState();
       this.logger?.log('platformio state json', {
@@ -391,7 +392,7 @@ export default class FirmwareService {
         );
         const compileResult = await this.builder.build(
           params.target,
-          userDefines,
+          '', // userDefines: not used.
           firmwarePath,
           (output) => {
             this.updateLogs(output);
@@ -485,7 +486,7 @@ export default class FirmwareService {
 
         const flashResult = await this.builder.flash(
           params.target,
-          userDefines,
+          '', // userDefines: not used
           firmwarePath,
           params.serialDevice,
           uploadType,

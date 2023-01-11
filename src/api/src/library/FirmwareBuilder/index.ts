@@ -91,7 +91,7 @@ export default class FirmwareBuilder {
     firmwarePath: string,
     onOutput: OnOutputFunc = NoOpFunc
   ): Promise<CommandResult> {
-    await this.storeUserDefines(firmwarePath, userDefines);
+    // await this.storeUserDefines(firmwarePath, userDefines);
     await this.removeStaleBinaries(firmwarePath, target);
     return this.platformio.build(firmwarePath, target, onOutput);
   }
@@ -104,7 +104,7 @@ export default class FirmwareBuilder {
     uploadType: UploadType,
     onOutput: OnOutputFunc = NoOpFunc
   ): Promise<CommandResult> {
-    await this.storeUserDefines(firmwarePath, userDefines);
+    // await this.storeUserDefines(firmwarePath, userDefines);
     await this.removeStaleBinaries(firmwarePath, target);
     return this.platformio.flash(
       firmwarePath,

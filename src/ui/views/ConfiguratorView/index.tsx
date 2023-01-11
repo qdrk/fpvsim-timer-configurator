@@ -805,7 +805,7 @@ const ConfiguratorView: FunctionComponent<ConfiguratorViewProps> = (props) => {
             </CardContent>
             <Divider />
 
-            <CardTitle
+            {/* <CardTitle
               icon={<SettingsIcon />}
               title={
                 <div ref={deviceOptionsRef}>
@@ -863,7 +863,7 @@ const ConfiguratorView: FunctionComponent<ConfiguratorViewProps> = (props) => {
               />
               <Loader loading={loadingOptions} />
             </CardContent>
-            <Divider />
+            <Divider /> */}
 
             <CardTitle icon={<SettingsIcon />} title="Actions" />
             <Divider />
