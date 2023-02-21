@@ -1,7 +1,7 @@
 {
   "name": "fpvsim-timer-configurator",
   "productName": "FPVSIM Timer Configurator",
-  "description": "Cross platform build & configuration tool for the ExpressLRS firmware",
+  "description": "Cross platform build & configuration tool for the FPVSIM Timer firmware",
   "scripts": {
     "build": "concurrently \"yarn build:main\" \"yarn build:renderer\"",
     "build-dll": "yarn cross-env NODE_ENV=development webpack --config ./.erb/configs/webpack.config.renderer.dev.dll.babel.js",
