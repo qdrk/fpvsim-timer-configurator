@@ -36,7 +36,7 @@ const SupportView: FunctionComponent = () => {
                 target="_blank"
                 variant="contained"
                 rel="noreferrer noreferrer"
-                href="https://www.expresslrs.org/"
+                href="https://www.fpvsim.com/"
               >
                 ExpressLRS Documentation
               </Button>
