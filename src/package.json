@@ -1,7 +1,7 @@
 {
   "name": "fpvsim-timer-configurator",
   "productName": "FPVSIM Timer Configurator",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Cross platform configuration tool for the FPVSIM TIMER firmware",
   "main": "./main.prod.js",
   "author": {
