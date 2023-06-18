@@ -1,0 +1,30 @@
+[
+  {
+    "category": "LicardoFPV",
+    "name": "Timer C3",
+    "targets": [
+      {
+        "flashingMethod": "UART",
+        "name": "esp32c3"
+      }
+    ],
+    "userDefines": [],
+    "wikiUrl": "",
+    "deviceType": "ExpressLRS",
+    "aliases": []
+  },
+  {
+    "category": "LicardoFPV",
+    "name": "Timer S3",
+    "targets": [
+      {
+        "flashingMethod": "UART",
+        "name": "esp32s3"
+      }
+    ],
+    "userDefines": [],
+    "wikiUrl": "",
+    "deviceType": "ExpressLRS",
+    "aliases": []
+  }
+]
