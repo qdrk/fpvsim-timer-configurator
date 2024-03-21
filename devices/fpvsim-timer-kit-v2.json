@@ -1,11 +1,11 @@
 [
   {
-    "category": "ESP32",
-    "name": "node32s",
+    "category": "FPVSIM Official",
+    "name": "FPVSIM Timer V2 Kit",
     "targets": [
       {
         "flashingMethod": "UART",
-        "name": "node32s"
+        "name": "esp32c3"
       }
     ],
     "userDefines": [],
