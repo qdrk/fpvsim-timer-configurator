@@ -18,6 +18,10 @@ jobs:
 
       - name: Checkout git repo
         uses: actions/checkout@v3
+      
+      # required for node gyp / serialport module
+      - name: Install setuptools
+        run: pip install setuptools
 
       - name: Install Node, NPM and Yarn
         uses: actions/setup-node@v3
